@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+
+{% endblock %}
+{% block body %}
+<!-- page header -->
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div>
+                    <h4 style="font-family: monospace; font-weight: 700; font-size: 1.1250em;">{{ post.title }}</h4>
+                    <span>
+                        Posted by
+                        <a style="text-decoration: none; font-size: 0.8125em; font-family: monospace;" href="#">{{ post.author }}</a> 
+                        - {{ post.created_on }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div>
+                    <img class="img-fluid" src="{{ post.header_image.url }}">
+                </div>
+                <br>
+                <div style="font">
+                	{{ post.content|safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
