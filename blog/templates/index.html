@@ -22,7 +22,7 @@
                                 </h4>
                                 <p>{{ post.author}} - {{ post.created_on}}</p>
                                 <p>
-                                    {{post.content|striptags|safe|truncatewords:50}}
+                                    {{post.content|striptags|safe|truncatechars:100}}
                                 </p>
                             </div>
                             <div class="card-read-more">
