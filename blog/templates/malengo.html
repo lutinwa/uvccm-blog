@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+    <section class="p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex">
+                <div>
+                    <h1>
+                       Mapinduzi ya taarifa 
+                    </h1>
+                    <p class="lead">Kuboresha taarifa za wanachama wa UVCCM idara ya vyuo na vyuo vikuu mkoa wa mbeya kwa ajili ya kuweka kumbukumbu za wanachama hao kwa miaka ijayo.</p>
+                </div>
+                <img class="img-fluid w-50"src="{% static '/images/taarifa.png' %}">
+            </div>
+        </div>
+    </section>
+    <section class="p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex">
+                <img class="img-fluid w-50"src="{% static '/images/social.png' %}">
+                <div>
+                    <h1>
+                        Siasa ya dijitali
+                    </h1>
+                    <p class="lead">Kwendana na mabadiliko ya sayansi na teknolojia kwenye siasa ya kidijitali (political in digital platforms)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
